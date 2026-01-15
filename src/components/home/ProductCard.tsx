@@ -54,14 +54,21 @@ export const ProductCard = ({ product, index = 0 }: ProductCardProps) => {
             </Button>
           </div>
 
-          {/* Category Badge */}
-          <div className="absolute bottom-4 left-4">
+          {/* Gender Badge */}
+          <div className="absolute top-4 left-4">
             <span className={cn(
               "px-3 py-1 text-xs uppercase letter-spacing-wide rounded-sm backdrop-blur-sm font-semibold",
-              product.category === "feminine" && "bg-rose-500/80 dark:bg-rose-600/80 text-white",
-              product.category === "masculine" && "bg-slate-800/80 dark:bg-slate-900/80 text-white",
-              product.category === "unisex" && "bg-amber-600/80 dark:bg-amber-700/80 text-white"
+              product.gender === "feminine" && "bg-rose-500/90 dark:bg-rose-600/90 text-white",
+              product.gender === "masculine" && "bg-blue-600/90 dark:bg-blue-700/90 text-white",
+              product.gender === "unisex" && "bg-amber-600/90 dark:bg-amber-700/90 text-white"
             )}>
+              {product.gender || "unisex"}
+            </span>
+          </div>
+
+          {/* Category Badge */}
+          <div className="absolute bottom-4 left-4">
+            <span className="px-3 py-1 text-xs uppercase letter-spacing-wide rounded-sm backdrop-blur-sm font-semibold bg-slate-800/80 dark:bg-slate-700/80 text-white">
               {product.category}
             </span>
           </div>
