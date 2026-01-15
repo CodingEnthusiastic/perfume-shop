@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: 
+**URL**: https://perfume67.netlify.app/
 
 ## How can I edit this code?
 
@@ -46,10 +46,15 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
- and click on Share -> Publish.
+## ScreenShots
 
-## Can I connect a custom domain to my Lovable project?
+<img width="1915" height="948" alt="image" src="https://github.com/user-attachments/assets/ac818a0e-69aa-42ed-b241-decbd173d9b0" />
+<img width="1918" height="976" alt="image" src="https://github.com/user-attachments/assets/fb407c2c-2a59-4837-8f0b-571e834c49e0" />
+<img width="1913" height="968" alt="image" src="https://github.com/user-attachments/assets/33f2d2c4-cd26-4b67-817e-14dc57405a7e" />
+<img width="1919" height="969" alt="image" src="https://github.com/user-attachments/assets/267ee814-6cb0-4169-9884-60d93a24929a" />
+<img width="1919" height="971" alt="image" src="https://github.com/user-attachments/assets/0ddf15f4-2012-4fef-9043-d88cb4775c9a" />
+<img width="1918" height="959" alt="image" src="https://github.com/user-attachments/assets/88318552-ddc8-43e2-9c4a-d43ddd90e892" />
+<img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/580fdb4d-95d0-4dfd-842f-fd5514ba4a1a" />
+<img width="1919" height="962" alt="image" src="https://github.com/user-attachments/assets/c8ca51af-c6dc-46f9-afab-486408d83ce4" />
+and many more ...
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
