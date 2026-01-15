@@ -99,7 +99,7 @@ export const HeroBanner = () => {
               {/* Main perfume image */}
               <div className="relative z-10 bg-gradient-to-br from-slate-100 dark:from-slate-800 to-slate-200 dark:to-slate-900 rounded-2xl p-4 border border-slate-300 dark:border-slate-700 backdrop-blur-sm shadow-2xl">
                 <img
-                  src="../../../public/favicon.jpg"
+                  src="/favicon.jpg"
                   alt="Premium Perfume Bottle"
                   className="w-full h-auto rounded-lg shadow-2xl"
                 />
