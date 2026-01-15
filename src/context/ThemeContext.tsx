@@ -16,11 +16,8 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     if (stored === "light" || stored === "dark") {
       return stored;
     }
-    // Check system preference
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
+    // Default to dark mode for first-time visitors
+    return "dark";
   });
 
   useEffect(() => {
