@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ProductCard } from "@/components/home/ProductCard";
@@ -10,10 +11,19 @@ const categories = ["all", "feminine", "masculine", "unisex"];
 
 const ShopPage = () => {
   const { data: products, isLoading, error } = useProducts();
+  const [searchParams] = useSearchParams();
   const [selectedCategory, setSelectedCategory] = useState("all");
 
+  // Get initial filter from URL params
+  useEffect(() => {
+    const gender = searchParams.get("gender");
+    if (gender && categories.includes(gender)) {
+      setSelectedCategory(gender);
+    }
+  }, [searchParams]);
+
   const filteredProducts = products?.filter((product) =>
-    selectedCategory === "all" ? true : product.category === selectedCategory
+    selectedCategory === "all" ? true : product.gender === selectedCategory
   );
 
   return (

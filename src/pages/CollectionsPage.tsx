@@ -52,7 +52,7 @@ const CollectionsPage = () => {
             {collections.map((collection, index) => (
               <Link
                 key={collection.id}
-                to={`/shop?category=${collection.id}`}
+                to={`/shop?gender=${collection.id}`}
                 className="group relative overflow-hidden rounded-sm animate-fade-in"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
